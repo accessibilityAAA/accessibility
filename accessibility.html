@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>無障礙聲明 - 資訊安全公告網</title>
+
+  <!-- 引入全站自動化獨立組件載入器 (自動載入 CSS、Favicon 與模組元件) -->
+  <script src="components.js"></script>
+</head>
+<body>
+
+  <!-- 無障礙跳頁連結 -->
+  <a class="skip-link" href="#main-content">跳到主要內容區塊</a>
+
+  <!-- 1. 獨立 Header 組件 -->
+  <site-header role="banner" id="header-anchor"></site-header>
+
+  <!-- 2. 獨立 Nav 組件 -->
+  <site-nav role="navigation" aria-label="網站主選單" id="common-nav"></site-nav>
+
+  <!-- 3. 中央雙欄主要內容區 -->
+  <div class="layout-container">
+    
+    <!-- 獨立 Aside 側邊欄組件 -->
+    <site-aside></site-aside>
+
+    <!-- 中央主要內容區 (Main) -->
+    <main id="main-content" role="main" tabindex="-1">
+      <a href="#main-content" class="accesskey-anchor" title="中央內容區快捷鍵 (Alt+C)" accesskey="C">:::</a>
+      
+      <h1>無障礙聲明</h1>
+      
+      <p>本網站遵循國家通訊傳播委員會 (NCC) 及數位發展部頒布之《無障礙網頁開發規範 2.1》進行架構設計，致力於確保網頁內容符合最高等級 <strong>AAA 級規範</strong>。本站所有頁面均可以透過純鍵盤操作，並支援螢幕閱讀器等各類輔助技術使用。</p>
+
+      <h2>一、 快捷鍵 (AccessKey) 操作說明</h2>
+      <p>本網站依據無障礙網頁設計原則，於各主要導覽區域設置定位點 `:::` 及快捷鍵。您可以使用鍵盤按鍵搭配快捷鍵快速移至目標區塊：</p>
+
+      <ul style="margin-left: 20px; margin-bottom: 20px; line-height: 2;">
+        <li><strong>Alt + U：</strong>定位於上方頁頭與主導覽選單區塊，包含網站標題與主要導覽連結。</li>
+        <li><strong>Alt + C：</strong>定位於中央主要內容區塊，跳過選單直接瀏覽各頁面的核心資訊。</li>
+        <li><strong>Alt + Z：</strong>定位於下方頁尾資訊區塊，包含網站宣告、聯絡方式與無障礙標章資訊。</li>
+      </ul>
+
+      <p style="background-color: var(--card-bg); border: 1px solid var(--border-color); padding: 12px; border-radius: 6px; margin-bottom: 20px;">
+        <strong>不同瀏覽器操作方式說明：</strong><br>
+        • Chrome / Edge / Safari：`Alt + 快捷鍵字母`<br>
+        • Firefox：`Alt + Shift + 快捷鍵字母`<br>
+        • Mac 操作系統：請將 `Alt` 鍵改為 `Control + Option` 鍵組合。
+      </p>
+
+      <h2>二、 無障礙設計特色</h2>
+      <ul style="margin-left: 20px; margin-bottom: 20px; line-height: 1.8;">
+        <li><strong>高視覺色彩對比：</strong>全站文字與背景對比度均達 7:1 以上，符合 AAA 級弱視友善規範。</li>
+        <li><strong>清晰的鍵盤聚焦框：</strong>全站所有可按壓元件與超連結在取得焦點時，均會呈現 4px 粗橘紅色高亮邊框。</li>
+        <li><strong>可縮放文字排版：</strong>全站使用相對單位（rem），使用者可透過瀏覽器放大至 200% 以上，排版結構依然清晰不破版。</li>
+        <li><strong>語意化結構：</strong>完整導入 HTML5 語意標籤與 ARIA 無障礙屬性，便利螢幕閱讀器使用者理解網站大綱。</li>
+      </ul>
+
+      <h2>三、 無障礙標章認證等級</h2>
+      <p>本網站目前符合《無障礙網頁開發規範 2.1》最高等級 <strong>AAA 級標章</strong> 認證標準。</p>
+
+      <h2>四、 無障礙反饋與聯繫管道</h2>
+      <p>如果您在使用本網站時遇到任何無障礙存取障礙、或對本站無障礙環境有任何改善建議，歡迎透過以下聯絡方式向我們回報：</p>
+      
+      <div style="border: 2px solid var(--primary-color); padding: 15px; border-radius: 8px; background-color: var(--card-bg);">
+        <p><strong>無障礙維運聯絡窗口：</strong> 資訊安全公告網 管理小組</p>
+        <p><strong>聯絡電話：</strong> (02) 2960-3456 分機 888</p>
+        <p><strong>電子郵件：</strong> accessibility@isecurity.example.gov.tw</p>
+        <p><strong>服務時間：</strong> 週一至週五 08:30 - 17:30</p>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- 4. 獨立 Footer 組件 -->
+  <site-footer role="contentinfo" id="footer-anchor"></site-footer>
+
+</body>
+</html>

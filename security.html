@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>資安宣導 - 資訊安全公告網</title>
+
+  <!-- 引入全站自動化獨立組件載入器 (自動載入 CSS、Favicon 與模組元件) -->
+  <script src="components.js"></script>
+</head>
+<body>
+
+  <!-- 無障礙跳頁連結 -->
+  <a class="skip-link" href="#main-content">跳到主要內容區塊</a>
+
+  <!-- 1. 獨立 Header 組件 -->
+  <site-header role="banner" id="header-anchor"></site-header>
+
+  <!-- 2. 獨立 Nav 組件 -->
+  <site-nav role="navigation" aria-label="網站主選單" id="common-nav"></site-nav>
+
+  <!-- 3. 中央雙欄主要內容區 -->
+  <div class="layout-container">
+    
+    <!-- 獨立 Aside 側邊欄組件 -->
+    <site-aside></site-aside>
+
+    <!-- 中央主要內容區 (Main) -->
+    <main id="main-content" role="main" tabindex="-1">
+      <a href="#main-content" class="accesskey-anchor" title="中央內容區快捷鍵 (Alt+C)" accesskey="C">:::</a>
+      
+      <h1>資訊安全宣導專區</h1>
+      <p>宣導最新網路防護知識與社交工程防範技巧。</p>
+
+      <h2>資安防護指引文章</h2>
+      <ul class="data-list">
+        <li class="data-item">
+          <div class="data-item-title">
+            <a href="news-detail-01.html">[資安指引] 如何設定安全且不易破解的強式密碼</a>
+          </div>
+          <div class="data-item-date">發布日期：2026-07-20</div>
+          <p>建議使用包含大小寫英文、數字與特殊符號組合，且長度達 12 字元以上之密碼。</p>
+        </li>
+        <li class="data-item">
+          <div class="data-item-title">
+            <a href="news-detail-02.html">[社交工程] 辨識釣魚郵件的五大關鍵特徵</a>
+          </div>
+          <div class="data-item-date">發布日期：2026-06-15</div>
+          <p>注意寄件者網域是否異常、信件是否帶有緊急催促字眼或不尋常之附件檔案。</p>
+        </li>
+      </ul>
+    </main>
+
+  </div>
+
+  <!-- 4. 獨立 Footer 組件 -->
+  <site-footer role="contentinfo" id="footer-anchor"></site-footer>
+
+</body>
+</html>

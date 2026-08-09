@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[宣導] 防範社交工程與詐騙郵件警訊 - 資訊安全公告網</title>
+
+  <!-- 引入全站自動化獨立組件載入器 (自動載入 CSS、Favicon 與模組元件) -->
+  <script src="components.js"></script>
+</head>
+<body>
+
+  <!-- 無障礙跳頁連結 -->
+  <a class="skip-link" href="#main-content">跳到主要內容區塊</a>
+
+  <!-- 1. 獨立 Header 組件 -->
+  <site-header role="banner" id="header-anchor"></site-header>
+
+  <!-- 2. 獨立 Nav 組件 -->
+  <site-nav role="navigation" aria-label="網站主選單" id="common-nav"></site-nav>
+
+  <!-- 3. 中央雙欄主要內容區 -->
+  <div class="layout-container">
+    
+    <!-- 獨立 Aside 側邊欄組件 -->
+    <site-aside></site-aside>
+
+    <!-- 中央主要內容區 (Main) -->
+    <main id="main-content" role="main" tabindex="-1">
+      <a href="#main-content" class="accesskey-anchor" title="中央內容區快捷鍵 (Alt+C)" accesskey="C">:::</a>
+      
+      <!-- 麵包屑導覽路徑，提升無障礙層級資訊感知 -->
+      <nav aria-label="現在位置" style="margin-bottom: 15px; font-size: 0.95rem;">
+        <a href="index.html">首頁</a> &gt; <a href="news.html">最新消息</a> &gt; <span aria-current="page">文章內容</span>
+      </nav>
+
+      <h1>[宣導] 防範社交工程與詐騙郵件警訊</h1>
+      <p style="color: #333333; border-bottom: 1px solid #444444; padding-bottom: 10px;">發布日期：2026-07-25 | 分類：資安宣導</p>
+
+      <p style="margin-top: 20px;">近來社交工程詐騙郵件頻傳，攻擊者常偽裝成系統管理者或公務機關發送帶有惡意連結之郵件。</p>
+      <p>請全體使用者提高警覺，切勿點擊任何來源不明或要求輸入帳號密碼之電子郵件連結，以維護資訊安全。</p>
+
+      <p style="margin-top: 30px;"><a href="news.html">← 返回最新消息列表</a></p>
+    </main>
+
+  </div>
+
+  <!-- 4. 獨立 Footer 組件 -->
+  <site-footer role="contentinfo" id="footer-anchor"></site-footer>
+
+</body>
+</html>
